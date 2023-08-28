@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Test from './Test'
+import Web3 from 'web3';
 
-function App() {
+declare global {
+  interface Window {
+    ethereum?: any
+  }
+}
+interface DummyProps {
+  number: Number,
+  setNumber: Number
+
+}
+const App: React.FC<DummyProps> = ({ number, setNumber }) => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Test />
     </div>
   );
 }

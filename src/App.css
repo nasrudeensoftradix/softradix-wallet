@@ -1,38 +1,104 @@
+body {
+  background-color: pink;
+}
+.card {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 700px;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #000000;
+}
+.btn_,
+.btn_2 {
+  border: none;
+  background: #111111;
+  transition: 0.8s ease;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.btn_2 {
+  background: #ececec;
+  color: #111111;
+  margin-left: 20px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin: 10px auto;
+  transform: translateY(-50px);
+  visibility: hidden;
+  opacity: 0;
+}
+#customers.wallet {
+  visibility: visible;
+  transition: 0.5s ease;
+  opacity: 1;
+  top: 20px;
+
+  transform: translateY(0);
+}
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 10px 20px;
+  /* margin-bottom: 20px; */
+}
+
+p.p1 b {
+  color: #29a20f;
+}
+p.p2 b {
+  color: #b39d21;
+}
+p.p3 b {
+  color: #d02e9e;
 }

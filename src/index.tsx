@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <App number={10} setNumber={10} />
   </React.StrictMode>
 );
 
