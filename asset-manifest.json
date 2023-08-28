@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/softradix-wallet/static/css/main.4d12c740.css",
+    "main.js": "/softradix-wallet/static/js/main.fdca39ed.js",
+    "static/js/787.1f013cd5.chunk.js": "/softradix-wallet/static/js/787.1f013cd5.chunk.js",
+    "index.html": "/softradix-wallet/index.html",
+    "main.4d12c740.css.map": "/softradix-wallet/static/css/main.4d12c740.css.map",
+    "main.fdca39ed.js.map": "/softradix-wallet/static/js/main.fdca39ed.js.map",
+    "787.1f013cd5.chunk.js.map": "/softradix-wallet/static/js/787.1f013cd5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d12c740.css",
+    "static/js/main.fdca39ed.js"
+  ]
+}
